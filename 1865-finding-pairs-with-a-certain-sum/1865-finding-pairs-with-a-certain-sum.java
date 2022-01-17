@@ -20,8 +20,6 @@ class FindSumPairs {
         IntegerNode oldNode = nums2Map.get(new IntegerNode(nums2[index]));
         if(oldNode !=null) {
             oldNode.decreaseCount();
-            if(oldNode.getCount() == 0)
-                nums2Map.remove(oldNode);
         }
         nums2[index] += val;
         IntegerNode integerNode = new IntegerNode(nums2[index]);
