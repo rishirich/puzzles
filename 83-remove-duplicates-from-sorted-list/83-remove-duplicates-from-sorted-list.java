@@ -14,11 +14,10 @@ class Solution {
         while(current != null) {
             if(previous.val == current.val) {
                 previous.next = current.next;
-                current = current.next;
             } else {
                 previous = current;
-                current = current.next;
             }
+            current = current.next;
                 
         }
         return head;
